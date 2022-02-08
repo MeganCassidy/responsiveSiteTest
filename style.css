@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body{
+
+	width: 100vw;
+	font-family: 'Times New Roman', Serif;
+}
+
+/*Image section*/
+#top-img{
+display: block;
+}
+
+img{
+background-repeat: no-repeat;
+max-width: 100%;
+height: auto;
+margin-top: 0;
+margin-left: 0;
+}
+
+.card-content p{
+		color: #DCC298;
+	}
+	
+.card-content h3{
+	color: #BF873F;
+}
+
+	
+footer{
+	background-color: #000;
+	max-height: 10vh;
+}
+
+#footerid li a{
+	color: #BF873F !important;
+	text-decoration: none;
+}
+
+
+/*Small screen sizes*/ 
+@media(max-width: 700px){
+	.nav-list{
+		display:none;
+	}
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #12232b;
+	  position: relative;
+	}
+	
+	.topnav #myLinks {
+	  display: none;
+	}
+	
+	.topnav a {
+	  color: white;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 150%;
+	  display: block;
+	}
+	
+	.icon i{
+		padding-right: 20px;
+		padding-top:12px;
+	}
+	
+	#myLinks a{
+		font-size: 16px;
+		color: #BF873F;
+	}
+	
+	.topnav a.icon {
+	  background: black;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  background-color: #12232b;
+	}
+		
+	.topnav a:hover {
+	  color: #BF873F;
+	}	
+
+	.small-logo{
+		max-height: 10vh;
+	}
+	
+	.card-content p{
+		font-size: 12px;
+	}
+	
+	.grid-container-element{
+		background-color: #12232b;
+		padding: 10%;
+	}
+	
+}
+
+/*Large screen sizes*/
+@media(min-width: 700px){
+	
+	nav{
+		background-color: #12232b;
+		max-height: 30vh;
+		
+	}
+	
+	ul{
+		text-align: center;
+		text-decoration: none;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.nav-list li{
+		display: inline-block;
+		padding-top: 8vh;
+	}
+	.nav-list{
+		padding:0 0;
+		margin: 0 0;
+		
+	}
+	
+	.topnav{
+		display:none;
+	}
+	
+	.logo{
+		max-height: 30vh;
+	}
+	
+	.link {
+	color: #BF873F !important;
+	display: block;
+	text-decoration: none;
+	padding: .5rem, 1rem;
+	font-family: 'Times New Roman', Serif;
+	font-size: 20px;
+	}
+
+
+	#main-section{
+		display: block;
+	}
+	
+	.card{
+		border-radius: 0 !important;
+	}
+	
+	.grid-child-element{
+		margin: 10%; 
+	}
+	
+	.grid-container-element { 
+    display: grid; 
+	grid-template-columns: 1fr 1fr;
+    width: 100%; 
+	background-color: #12232b;
+	
+	}
+	
+	
+	
+	#top-img img{
+		display: none;
+	}
+	/* Parallax scrolling effect on larger screens*/
+	#top-img{
+		background-image: url("img/main-img.jpg");
+		min-height: 700px; 
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+
+
+}
+
+
+
